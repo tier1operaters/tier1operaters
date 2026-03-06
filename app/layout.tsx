@@ -19,7 +19,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable}`}>
-      <body className="bg-slate-900 text-white font-inter">{children}</body>
+      <body className="bg-slate-900 text-white font-inter">
+        {children}
+        <script src="/particles.js" />
+      </body>
     </html>
   );
 }
