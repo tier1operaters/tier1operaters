@@ -4,15 +4,19 @@ import { Space_Grotesk, Inter } from "next/font/google";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space-grotesk" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
+
 export const metadata = {
-  title: "Professional Window Cleaning | Real Clean",
+  title: "Get Clean Windows | Premium Window Cleaning",
   description:
-    "Professional residential and commercial window cleaning. Fast quotes, crystal clear results, and affordable pricing.",
+    "Get Clean Windows offers premium residential and commercial window cleaning with instant quotes, stunning results, and modern service.",
   keywords: [
     "window cleaning",
+    "get clean windows",
     "residential window cleaning",
     "commercial window cleaning",
     "window washers near me",
+    "glass cleaning",
+    "modern window cleaning",
   ],
 };
 
@@ -24,8 +28,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       style={{ background: 'linear-gradient(135deg, #0F172A 0%, #1E40AF 60%, #38BDF8 100%)', minHeight: '100vh' }}
     >
       <body
-        className="bg-slate-900 text-white font-inter"
-        style={{ background: 'linear-gradient(135deg, #0F172A 0%, #1E40AF 60%, #38BDF8 100%)', color: '#F8FAFC', minHeight: '100vh', margin: 0 }}
+        className="bg-gradient-to-br from-blue-950 via-blue-800 to-sky-400 text-white font-inter min-h-screen"
+        style={{ color: '#F8FAFC', minHeight: '100vh', margin: 0 }}
       >
         {children}
         <script src="/particles.js" />
